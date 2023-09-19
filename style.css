@@ -1,0 +1,253 @@
+/* navbar css starts */
+.container-fluid 
+{ display: flex;
+  align-items: center;
+  justify-content: space-between;
+ }
+
+ .nav-item {
+    font-size: 20px;
+ }
+ .navbar-nav .nav-item .nav-link{
+    color: white;
+ }
+ .navbar-nav .nav-item .nav-link:hover{
+    color: yellow;
+ }
+ .nav-item a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: yellow;
+    transition: width .3s;
+  }
+  
+  .nav-item a:hover::after {
+    width: 100%;
+  }
+
+  .social-links a {
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-size: 25px;
+    justify-content: center;
+    margin-right: 10px;
+    display: inline-flex;
+    transition: width 2s,height 2s,background-color 2s,rotate 1s;
+}
+
+.social-links a:hover {
+    color: yellow;
+    rotate: 360deg;
+}
+
+.navbar button::before{
+    content: "";
+    width: 0px;
+    height: 100%;
+    position: absolute;
+    background-color: yellow;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 0.4s ease-in-out;
+  }
+
+.navbar button {
+    font-weight: 700;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 18px 34px;
+    font-size: 18px;
+    margin-left: 18px;
+    position: relative;
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+    border-radius: 20px;
+  }
+ .navbar button:hover {
+    color: black;
+    border-radius: 20px;
+    border: 1px solid white;
+  }
+  .navbar button:hover::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    color: white;
+    border-radius: 20px;
+  }
+
+ button span {
+    z-index: 1;
+  }
+  /* navbar css ends */
+ 
+
+
+/* landing page starts */
+.bg-cover{
+    background-position: center !important;
+    background-size: cover !important;
+}
+.slide1 {
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)), url(assets/banner\ image.png);
+    background-repeat: no-repeat;
+}
+.slide2 {
+    background-position: center;
+    background-size: cover;
+    background: linear-gradient(rgba(9,32,50,0.4),rgba(9,32,50,0.4)), url(assets/desert.webp);
+    background-repeat: no-repeat;
+}
+
+.slider-wrapper h6{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.landing-page h5{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    text-shadow: -1px -1px 8px rgb(0, 0, 255);
+}
+
+.glow {
+    color: #fff;
+    text-align: left;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #bcc907, 02px 0 20px #f6ff00, 0 0 30px #e5ff00, 0 0 40px #00e613, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px red, 0 0 40px #ff4da6, 0 0 50px #d30606, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+  .slider-wrapper .first img{
+    animation: up 10s linear infinite ;
+  }
+  
+  @keyframes up {
+    0%{
+      transform: translateY(50px);
+    }
+    50%{
+      transform: rotateY(90px);
+    }
+    100%{
+      transform: translate(120px);
+    }
+  }
+  .slider-wrapper .second img{
+    animation: down 10s linear infinite ;
+  }
+  
+  @keyframes down {
+    0%{
+      transform: translateY(-50px);
+    }
+    50%{
+      transform: rotateY(-90px);
+    }
+    100%{
+      transform: translate(-120px);
+    }
+  }
+
+  .slider-wrapper button{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.9px;
+    line-height: 1.5em;
+    margin-top: 49px;
+
+    display: flex;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid blue;
+    background-color: blue;
+  
+  }
+  
+  .slider-wrapper button svg{
+    font-size: 25px;
+    margin-left: 10px;
+    transition: 0.3s ease-in-out;
+    line-height: 1;
+  }
+  
+  .slider-wrapper button:hover svg{
+    margin-left: 59px;
+  }
+  
+.slider-wrapper button:hover{
+    color: red;
+    background-color: yellow;
+    outline: none;
+    border: 2px solid red;
+  }
+
+  .slider-wrapper a{
+    text-decoration: none;
+  }
+  .carousel-control-prev, .carousel-control-next {
+    border-radius: 50%;
+    height: 40px;
+    width: auto;
+    background-color: yellow;
+    border: 2px solid red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .carousel-control-prev{
+    margin-left: 20px;
+  }
+  .carousel-control-next{
+    margin-right: 20px;
+  }
+/* landing page ends */
+
+
+
+ @media (max-width: 480px) {
+    .navbar-nav .nav-item{
+    align-items: center;
+    justify-content: center;
+    display: flex; 
+}
+.nav-item{
+    font-size: 14px;
+}
+ button {
+    height: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+ }
+ .social-links a {
+    font-size: 20px;
+}
+.slider-wrapper h5{
+    font-size: 15px;
+}
+
+  }
+  
