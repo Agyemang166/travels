@@ -170,7 +170,8 @@
   }
 
   .slider-wrapper button,
-  #about button{
+  #about button,
+  #contact button{
     color: white;
     font-weight: 700;
     font-size: 20px;
@@ -187,7 +188,8 @@
   }
   
   .slider-wrapper button svg,
-  #about button svg{
+  #about button svg,
+  #contact button svg{
     font-size: 25px;
     margin-left: 10px;
     transition: 0.3s ease-in-out;
@@ -195,12 +197,14 @@
   }
   
   .slider-wrapper button:hover svg,
-  #about button:hover svg{
+  #about button:hover svg,
+  #contact button:hover svg{
     margin-left: 59px;
   }
   
 .slider-wrapper button:hover,
-#about button:hover{
+#about button:hover,
+#contact button:hover{
     color: red;
     background-color: yellow;
     outline: none;
@@ -248,6 +252,35 @@
   }
 /* About page ends */
 
+.contact-block {
+    position: relative;
+    background-color: rgb(23, 23, 173);
+  }
+  
+  .contact-block .row {
+    margin: 0 0 25px;
+  }
+  
+  .contact-block iframe {
+    border: 0;
+    width: 100%;
+    height: 420px;
+  }
+  
+  .form-control {
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+
+  .contact-form .text-area {
+    height: 200px;
+    text-align: left !important; 
+    vertical-align: top !important;
+  }
+
 
  @media (max-width: 480px) {
     .navbar-nav .nav-item{
@@ -274,11 +307,20 @@
 .about-img{
     display: flex;
     justify-content: center;
+    height: auto;
+    width: 70%;
+    object-fit: cover;
+    margin: none;
+    padding: none;
   }
 .about-text{
     letter-spacing: 0;
     font-size: 10px;
     padding-top: none;
+}
+#contact button{
+    background-color: white;
+    color: black;
 }
 
   }
