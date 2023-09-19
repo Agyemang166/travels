@@ -253,12 +253,41 @@
 /* About page ends */
 
 
+
+
+/* testimonial starts */
+#testimonial{
+    background-color: #24262b;
+    text-align: center;
+    
+}
+#testimonial h3 a{
+    color: yellow;
+}
+#testimonial h2{
+    font-weight: 700;
+}
+#testimonial-header p{
+    opacity: 0.8;
+}
+.testimonial-description{
+    font-style: italic;
+}
+
+/* testimonial ends */
+
+
+
+
+
 /* contact page starts */
 .contact-block {
     position: relative;
     background-color: rgb(23, 23, 173);
   }
-  
+.contact-block h2{
+    font-weight: 700;
+}
   .contact-block .row {
     margin: 0 0 25px;
   }
@@ -380,13 +409,19 @@
   }
 .about-text{
     letter-spacing: 0;
-    font-size: 10px;
+    font-size: 14px;
     padding-top: none;
 }
 #contact button{
     background-color: white;
     color: black;
 }
+.footer-col {
+    width: 100%;
+}
+.testimonial-page .min-vh-100 {
+
+  }
 
   }
   
