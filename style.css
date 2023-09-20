@@ -260,6 +260,24 @@
   }
 /* About page ends */
 
+/* services starts */
+#services .services-header h2{
+  font-weight: 700;
+}
+#services .card-body .hide{
+  display: block;
+}
+#services .services-header .hide{
+  display: none;
+}
+#services .card-title,
+#services .card-text{
+  font-weight: 700;
+}
+#services .card-body {
+  text-align: justify;
+}
+/* services ends */
 
 /* recommend starts */
 .recommend {
@@ -507,7 +525,20 @@
   color: blue;
   text-align: center;
 }
-
+#services .card-title{
+  font-size: 13px;
+  font-weight: 700;
+}
+#services .card-text{
+  font-size: 13px;
+  font-weight: 700;
+}
+#services .card-body .hide{
+  display: none;
+}
+#services .services-header .hide{
+  display: block;
+}
 
   }
   

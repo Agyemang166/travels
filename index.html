@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="style.css">
     <title>Mizpah Travel Agency</title>
 </head>
 <body>
     <!-- Navbar starts -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1 sticky-top">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1 fixed-top">
         <div class="container-fluid">
         
             <a href="#" class="navbar-brand" ><img src="assets/logo.png" alt="" style="width:70px;height:60px;">Mizpah Travel Agency</a>
@@ -29,9 +30,6 @@
                     </li>
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About Us</a>
-                    </li>
-                   <li class="nav-item">
-                        <a href="#services" class="nav-link">Services </a>
                     </li>
                     <li class="nav-item">
                         <a href="#recommend" class="nav-link">Recommend</a>
@@ -145,6 +143,88 @@
     </section>
 <!--  About us ends-->
 
+
+<!-- services starts -->
+<section id="services">
+  <div class="services-header text-center pt-5 pb-3">
+    <h2>Our Services</h2>
+    <p>~What We Provide For Our Customers~</p>
+    <p class="hide">More Info Larger Screens</p>
+  </div>
+  <div id="carouselExampleIndicators" class="carousel slide">
+    <div class="carousel-indicators pt-5">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-primary" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class=" bg-primary"aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class=" bg-primary" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <!-- first carousel start -->
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-6 col-6">
+            <div class="card m-3" >
+              <img src="assets/accomodation.avif" class="card-img-top p-2" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">ACCOMODATION</h5>
+                <p class="card-text">Sure! 'Experience the ease of hotel booking with our travel agency.</p>
+                <p class="hide"> We curate accommodations to your taste and budget, ensuring a perfect fit. Our exclusive deals and efficient handling of changes and cancellations make your travel planning a breeze. Enjoy stress-free journeys with us</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-6">
+            <div class="card m-3" >
+              <img src="assets/tour.avif" class="card-img-top p-2" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">PLANNING</h5>
+                <p class="card-text">Let's transform your dream holiday into real-life experiences!</p>
+                <p class="hide">With our travel planning services, we'll handle everything from picking the perfect destination to arranging accommodations and creating a detailed itinerary. We'll ensure every aspect of your trip is taken care of, so all you have to do is relax and enjoy!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- first carousel ends -->
+
+    <!-- second carousel start -->
+    <div class="carousel-item">
+      <div class="row">
+        <div class="col-md-6 col-6">
+          <div class="card m-3" >
+            <img src="assets/insuarance.webp" class="card-img-top p-2" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">INSURANCE</h5>
+              <p class="card-text">Travel stress-free with our comprehensive insurance!</p>
+              <p class="hide"> We curate accommodations to your taste and budget, ensuring a perfect fit. Our exclusive deals and efficient handling of changes and cancellations make your travel planning a breeze. Enjoy stress-free journeys with us</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-6">
+          <div class="card m-3" >
+            <img src="assets/transport.jpg" class="card-img-top p-2" alt="...">
+            <div class="card-body text-center">
+              <h5 class="card-title">TRANSPORT</h5>
+              <p class="card-text">Experience seamless travel journeys with our expert travel agency service!</p>
+              <p class="hide">Begin a life-changing journey with us. Our top-tier, comfortable, and efficient transportation services guarantee that every trip you embark on becomes a cherished memory. We hold a strong belief that the journey is equally, if not more, important as the destination itself. We are wholeheartedly committed to making each and every moment of your travels exceptionally special. With us, every journey is more than just a trip, it's an experience filled with unforgettable moments. Trust us to make your travel dreams come true.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- second carousel ends -->
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- services ends -->
+
 <!-- recommend starts -->
 <section class="recommend " id="recommend">
   <div class="recommend-header text-center">
@@ -243,11 +323,8 @@
   </div>
 </section>
 
-<!-- Image 1 -->
-
-
-
 <!-- recommend ends -->
+
 
 
 <!-- textimonials page starts -->
@@ -357,7 +434,7 @@
     
 
     <div className='google-map mb-5'>
-        <iframe title="map" src="https://maps.google.com/maps?q=west chester&t=&z=10&ie=UTF8&iwloc=&output=embed"></iframe>
+      <iframe src="https://maps.google.com/maps?q=fairfield,ohio,usa&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"></iframe>
       </div>
   </section>
 <!-- contact page ends -->
@@ -382,7 +459,7 @@
             <div class="footer-col col-md-3 col-sm-6 text-white">
                 <h4>Contacts</h4>
                 <ul>
-                <li><i class="bi bi-geo-alt-fill"></i> West Chester,USA</li>
+                <li><i class="bi bi-geo-alt-fill"></i> Fairfield,Ohio,USA</li>
                 <li><i class="bi bi-phone"></i> +1 (513) 328-2864</li>
                 <li><i class="bi bi-envelope"></i>mizpahtravelagency@gmail.com</li>
                 </ul>
@@ -422,6 +499,7 @@
       Tel:${event.target.elements.telephone.value}`;
     }
   </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
