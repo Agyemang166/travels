@@ -11,7 +11,11 @@
   align-items: center;
   justify-content: space-between;
  }
-
+ .navbar-brand .text-warning,
+ .navbar-brand span{
+  font-weight: 700;
+  text-shadow: 2px 2px 1px blue;
+ }
  .nav-item {
     font-size: 20px;
  }
@@ -100,6 +104,47 @@
     background-position: center !important;
     background-size: cover !important;
 }
+.home {
+  background-image: url(assets/home.avif);
+}
+.home .content {
+  text-align: center;
+  padding-top: 200px;
+}
+.home .content h5 {
+  font-size: 38px;
+  color: white;
+  font-weight: 900;
+}
+.home .content h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 600;
+  text-shadow: 0px 2px 2px black;
+  margin-top: 5px;
+}
+.changecontent::after{
+  content: '';
+  color: #ffa500;
+  text-shadow: 0px 1px 1px white;
+  animation: changetxt 10s infinite linear;
+}
+
+@keyframes changetxt {
+  0%{content: "France";}
+  10%{content: "Spain";}
+  20%{content: "United States";}
+  30%{content: "China";}
+  40%{content: "India";}
+  50%{content: "Pakistan";}
+  60%{content: "Italy";}
+  70%{content: "Mexico";}
+  80%{content: "Turkey";}
+  90%{content: "Germany";}
+  10%{content: "United Kingdom";}
+
+  
+}
 .slide1 {
     background-position: center;
     background-size: cover;
@@ -176,6 +221,23 @@
     }
   }
 
+  .content button {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 20px;
+    border: 2px solid blue;
+    background-color: blue;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  .content button:hover{
+    color: red;
+    background-color: yellow;
+    border: 2px solid red;
+  }
+  
   .slider-wrapper button,
   #about button,
   #contact button{
@@ -185,7 +247,6 @@
     letter-spacing: 0.9px;
     line-height: 1.5em;
     margin-top: 49px;
-
     display: flex;
     border-radius: 10px;
     padding: 20px;
@@ -277,6 +338,7 @@
 #services .card-body {
   text-align: justify;
 }
+
 /* services ends */
 
 /* recommend starts */
@@ -538,6 +600,25 @@
 }
 #services .services-header .hide{
   display: block;
+}
+.home .content {
+  text-align: center;
+  padding-top: 80%;
+}
+.home .content h5 {
+  font-size: 25px;
+  color: white;
+  font-weight: 900;
+}
+.home .content h1 {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  text-shadow: 0px 2px 2px black;
+  margin-top: none;
+}
+.content button {
+ margin-left: 25%;
 }
 
   }

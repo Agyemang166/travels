@@ -17,7 +17,11 @@
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-1 fixed-top">
         <div class="container-fluid">
         
-            <a href="#" class="navbar-brand" ><img src="assets/logo.png" alt="" style="width:70px;height:60px;">Mizpah Travel Agency</a>
+            <a href="#" class="navbar-brand" >
+              <img src="assets/logo.png" alt="" style="width:70px;height:60px;">
+              <span class="text-warning">Mizpah</span>
+              <span> Travel Agency</span>
+            </a>
 
             <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
@@ -30,6 +34,9 @@
                     </li>
                     <li class="nav-item">
                         <a href="#about" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
                     </li>
                     <li class="nav-item">
                         <a href="#recommend" class="nav-link">Recommend</a>
@@ -57,15 +64,29 @@
     <!-- landing page starts -->
     <section class="landing-page" id="home">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" data-bs-keyboard="true" data-bs-touch="true">
-            <!-- first carousel starts -->
+
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
+            <!-- active carousel starts -->              
+              <div class="carousel-item home active min-vh-100 bg-cover " data-bs-interval="10000">
+                <div class="content">
+                  <h5 class="glow text-center">Welcome To Mizpah Travel Agency</h5>
+                  <h1>Visit <span class="changecontent"></span></h1>
+                  <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolores aut recusandae quia.</p>
+                  <a href='https://wa.me/+15133282864'><button className="align-items-center d-flex justify-content-center" > <span>Let's Connect</span></button></a>
+                </div>
+                
+            </div>
+            <!-- active carousel ends -->
+
+
+            <!-- first carousel starts -->              
+              <div class="carousel-item " data-bs-interval="10000">
                 <div class="slider-wrapper">
                     <div class="slide1 min-vh-100 bg-cover d-flex align-items-center">
                       <div class="container">
                         <div class="row">
                           <div class="col-md-6 ">
-                            <h6 class="text-uppercase glow">Welcome to mispah travel Agency</h6>
+                            <h6 class="text-uppercase glow"> mispah travel Agency</h6>
                             <h5>Ready to escape the ordinary? Join us on a journey of discovery. You'll immerse yourself in diverse cultures, taste exotic cuisines, and make unforgettable memories. Whether you're a seasoned globetrotter or a first-time explorer, we've got the perfect adventure waiting for you. Let's turn your travel dreams into reality. The world is your oyster, and it's time to start exploring!</h5>
                             <a href='https://wa.me/+15133282864'><button className="vvd" > <span>Let's Connect</span></button></a>
                           </div>
