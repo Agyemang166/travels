@@ -624,6 +624,8 @@
 .content button {
  margin-left: 25%;
 }
-
-  }
+#mc_embed_signup {
+  width: 10px;
+}
+}
   
